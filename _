@@ -1,0 +1,8 @@
+#!/bin/sh
+if test -d "auto4te.cache" ; then
+	rm -rf auto4te.cache
+fi
+aclocal
+autoheader
+automake --add-missing --foreign
+autoconf
